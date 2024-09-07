@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #body{
+            background-color: black;
+        }
+        #text{
+            font-size: xx-large;
+            color: #324a5f;
+        }
+        #important{
+            color: white;
+        }
+    </style>
+    <title>thomasvandermolen.com</title>
+</head>
+<body id="body">
+    <pre id="text">
+        #include &lt;stdlib.h&gt;
+
+        typedef struct{
+            char*  education;
+            char** certifications;
+            char** links;
+        }profile;
+        
+        int main(int argc, char* argv[]){
+            profile* thomas = (profile*)malloc(sizeof(profile));
+            <span id="important">
+            <span id="text">//my degree</span>
+            thomas->education = "BS Computer Science, Embry-Riddle Aeronautical University, 2025";
+
+            <span id="text">//certifications that I have</span>
+            thomas->certifications[0] = "GFACT";
+            thomas->certifications[1] =  "GSEC";
+
+            <span id="text">//links to interesting places</span>
+            thomas->links[0] = "<a href="https://www.linkedin.com/in/tomvdmolen" target="_blank">linkedin</a>";
+            </span>
+            free(thomas);
+
+            return 0;
+        }
+    </pre>
+</body>
+</html>
